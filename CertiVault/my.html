@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karpagam College Of Engineering</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('assets/college_image.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .top-bar {
+            background: white;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        .top-bar .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .top-bar .logo img {
+            height: 40px;
+        }
+
+        .top-bar .logo span {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .top-bar .options {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .top-bar .options a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .top-bar .options a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin-top: 60px; /* Space for the top bar */
+        }
+
+        .login-box {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-box img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .login-box h2 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .login-box p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-box button:hover {
+            background: #0056b3;
+        }
+
+        .login-box .divider {
+            margin: 20px 0;
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <h1>CertiVault</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="login-box">
+            <img src="assets/logo.png" alt="College Logo">
+            <h2>Karpagam College of Engineering</h2>
+            <p>Login As</p>
+            <form>
+                <button type="submit">College Admin</button>
+            </form>
+            <div class="divider">OR</div>
+            <button>Verifier</button>
+        </div>
+    </div>
+</body>
+</html>
